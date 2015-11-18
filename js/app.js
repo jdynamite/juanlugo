@@ -100,6 +100,14 @@ juanApp.controller('demoController', ["$scope", function($scope) {
 	$scope.demolink = "https://player.vimeo.com/video/143742564"
 }]);
 
+juanApp.controller('webController', ["$scope", "$http", function($scope, $http) {
+	$scope.activeMenu = "web";
+	$scope.categories = ["All"];
+	$http.get('js/projects/web.json').success(function( data ) {
+		$scope.web = data;
+	});
+}]);
+
 juanApp.filter('trusted', ['$sce', function ($sce) {
     return function(url) {
         return $sce.trustAsResourceUrl(url);
@@ -124,6 +132,10 @@ juanApp.config( function($routeProvider, $locationProvider) {
     .when('/demo', {
     	templateUrl: "partials/demo.html",
     	controller: 'demoController'
+    })
+    .when('/web', {
+    	templateUrl: "partials/webGallery.html",
+    	controller: 'webController'
     })
     .otherwise ({
     	redirectTo: 'partials/gallery.html'

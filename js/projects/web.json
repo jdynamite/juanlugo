@@ -1,0 +1,17 @@
+[
+	{
+		"name" : "Retro Tee Co.",
+		"media" : "img/web/retro.png",
+		"url" : "http://retroteeco.com"
+	},
+	{
+		"name" : "Jim Rood LD",
+		"media" : "img/web/jim.png",
+		"url" : "http://jimrood.com"
+	},
+	{
+		"name" : "All Design 2 Go",
+		"media" : "img/web/ad2go.png",
+		"url" : "http://alldesign2go.com"
+	}
+]
