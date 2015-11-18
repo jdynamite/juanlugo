@@ -1,0 +1,143 @@
+body {
+	/*font-family: 'Open Sans', sans-serif;*/
+	font-family: 'Ubuntu', sans-serif;
+	background-color: #eee;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.active>a:hover, .nav-pills>li.active>a:focus {
+	color: #fff;
+	background-color: #428bca;
+}
+
+.column {
+    margin-top:20px;
+}
+
+.nav-pills>li>a {
+	border-radius: 0px;
+}
+
+a {
+	color: #000;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+
+.nav-stacked>li+li {
+	margin-top: 0px;
+	margin-left: 0;
+	border-bottom:1px solid #dadada;
+	border-left:1px solid #dadada;
+	border-right:1px solid #dadada;
+}
+
+#container { 
+	margin: 0 0;
+}
+
+#search {
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+}
+
+.thumbnail {
+	background-color: transparent;
+	border: none;
+	position
+}
+
+.thumbnail:hover {
+	-webkit-box-shadow: inset 0px 0px 185px rgba(19,101,58,0.6);
+	-moz-box-shadow:    inset 0px 0px 185px rgba(19,101,58,0.6);
+	box-shadow:         inset 0px 0px 185px rgba(66,139,202,0.6);
+}
+
+.vignette {
+	-webkit-box-shadow: inset 0px 0px 185px rgba(0,0,0,0.6);
+	-moz-box-shadow:    inset 0px 0px 185px rgba(0,0,0,0.6);
+	box-shadow:         inset 0px 0px 185px rgba(0,0,0,0.6);
+	
+	line-height: 0;         /* ensure no space between bottom */
+}
+
+.project {
+	padding: 0 0;
+	margin: 0 0;
+}
+
+.gallery-img {
+	width: 100%;
+}
+
+#detail-image-continer {
+	height: 300px;
+	overflow: hidden;
+}
+
+#detail-image {
+	width: 100%;
+}
+
+.category {
+	line-height: 36px;
+	margin-top: 5px;
+}
+
+#project-description {
+	margin-top: 20px;
+	line-height: 28px;
+	font-size: 16px;
+	margin-bottom: 30px;
+}
+
+#marmoset {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 50px;
+}
+
+.pName {
+	font-size: 1.5em;
+}
+
+@media screen and (min-width: 767px) {
+	.button-thing {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.pName {
+		font-size: 1em;
+	}
+
+	/* outer div */
+	.row-offcanvas {
+		left: 0;
+		position: relative;
+		transition: left 0.3s ease-in 0s;
+	}
+
+	/* sidebar */
+	.sidebar-offcanvas {
+		left: -50%;
+		width: 50%;
+		position: absolute;
+	}
+
+	/* content */
+	.row-offcanvas.active {
+		left: 50%;
+	}
+
+}
+
+#toggleMenu-btn {
+	margin-top: 5px;
+}

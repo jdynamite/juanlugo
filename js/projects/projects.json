@@ -1,0 +1,85 @@
+[
+	{
+		"name" : "Tank Girl Face Rig",
+		"media" : "img/projects/tankGirlRig_sm.png",
+		"carousel" : {"0":"tankGirlFaceRig/tankGirlRig.PNG"},
+		"category" : "Rigging",
+		"programs" : ["Autodesk Maya"],
+		"description" : "Work in progress facial rig of the Tank Girl I modeled following Cory Loftis' concept. This will be the last project for AnimSchool before finishing the 3D Character course. I'll have a video showcasing this rig's features soon!"
+	},
+
+	{
+		"name" : "Tank Girl",
+		"media" : "img/projects/tankGirl.png",
+		"artstation" : "https://www.artstation.com/artwork/tank-girl-582bc073-136d-4c7e-bf22-459047943480",
+		"carousel" : {"0":"tankGirl/01.jpg", "1":"tankGirl/02.jpg", "2":"tankGirl/03.jpg"},
+		"category" : "Modeling",
+		"marmoset" : "marmoset/tankgirl.html",
+		"programs" : ["Autodesk Maya", "ZBrush", "Keyshot"],
+		"description" : "This model was done in the Advanced Modeling in ZBrush class from Animschool. The class emulates a production environment for character modeling from a single three-quarter image. In my case, I decided to use Cory Loftis' rendition of Tank Girl."
+
+	},
+
+	{
+		"name": "Project Hades",
+		"media" : "img/projects/projectHades.png",
+		"category" : "Rigging",
+		"videoUrl" : "https://www.youtube.com/embed/V9Wnl-XobKU",
+		"programs" : ["Autodesk Maya", "UE4"],
+		"features" : ["Ik/Fk Blending", "Dynamic Scaling", "Facial Controls", "Space Switching & Blending"],
+		"description" : "I rigged and skinned 6 character assets in Maya for the production of this game, which features an adrenaline-pumping ride experience in Orlando, using the Valkyrie Interactive 4D motion ride."
+	},
+
+	{
+		"name": "Disney's Color and Play",
+		"media" : "img/projects/colorAndPlay.png",
+		"overlay" : "img/projects/colorAndPlay-overlay.png",
+		"category" : "Rigging",
+		"carousel" : ["colorAndPlay/gogo.jpg", "colorAndPlay/frozen.jpg", "colorAndPlay/hiro.jpg"],
+		"features" : ["Ik/Fk Blending", "Dynamic Scaling", "Facial Controls", "Space Switching & Blending"],
+		"programs" : ["Autodesk Maya", "Unity"],
+		"description" : "For this project I rigged and skinned 3 characters from Big Hero 6 (Hiro, Baymax, Gogo), 2 from Frozen (Elsa, Anna), and 6 Disney princesses (Ariel, Jasmine, Belle, Cinderella, Rapunzel and Snow White)."
+	},
+
+	{
+		"name" : "Star Wars Scene Maker",
+		"media" : "img/projects/sceneMaker.png",
+		"category": "Rigging",
+		"videoUrl" : "https://www.youtube.com/embed/MxRpe4gKpcg",
+		"features" : "",
+		"programs": ["Autodesk Maya", "Unity"],
+		"renders" : ["img/obi-wan.png"],
+		"webm" : "img/TrooperRun.webm",
+		"description" : "For this game, I rigged and skinned a total of 9 character assets, including Obi Wan, Qui-Gon, Darth Maul and the Storm Trooper - to be exported from Maya to Unity."
+	},
+
+	{
+		"name" : "Haunted House",
+		"media" : "img/projects/hauntedHouse.png",
+		"carousel" : {"0":"hauntedHouse/03.jpg", "1":"hauntedHouse/02.jpg", "2":"hauntedHouse/01.jpg", "3":"/hauntedHouse/04.jpg"},
+		"category" : "Modeling",
+		"programs" : ["Autodesk Maya"],
+		"description" : "This environment model was done for an Environment Modeling class from Animschool. We sought to come as close as possible to the design language of our concept (mine followed Alex Shatohin's concept environment), as well as gather reference material for details like wood and stone. The class leans heavily on modeling, so there are no normal or displacement maps for this particular project, everything was modeled."
+	},
+
+	{
+		"name" : "Thief",
+		"media" : "img/projects/thief.png",
+		"carousel" : {"0":"thief/thief_hd.png", "1":"thief/thief_CU_hd.png"},
+		"category" : "Modeling",
+		"marmoset" : "marmoset/thief.html",
+		"programs" : ["Autodesk Maya"],
+		"description" : "Complete Maya modeling following a concept by Tyson Murphy, inspired by Tangled."
+	},
+
+	{
+		"name" : "Mech Farmer",
+		"media" : "img/projects/mechFarmer.png",
+		"carousel" : {"0":"mechFarmer/mechfarmer.jpg"},
+		"category" : "Modeling",
+		"programs" : ["Autodesk Maya"],
+		"marmoset" : "marmoset/mechfarmer.html",
+		"description" : "This character was modeled in Maya, following a concept by the great Jake Parker; for a Intro to 3D Modeling class in Animschool."
+	}
+
+]

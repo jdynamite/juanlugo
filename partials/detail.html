@@ -1,0 +1,70 @@
+<div id='detail-container'>
+
+	<div class='row'>
+		<div class='col-xs-12'><a href='index.html#!/'><span class="icon-prev"></span><h2>Back to gallery</h2></a></div>
+	</div>
+
+	<hr>
+
+	<div class='row' ng-show="projects[projectId].hasOwnProperty('carousel')"><div class='col-xs-12'>
+		<div id='detailCarousel' class='carousel slide' data-ride='carousel'>
+			<ol class='carousel-indicators'>
+				<li ng-repeat="(index, image) in projects[projectId].carousel" ng-class="index == 0 ? 'active' : ''" data-target='#detailCarousel' data-slide-to="{{index}}"></li>
+			</ol>
+			<div class='carousel-inner' role='listbox'>
+				<div ng-repeat="(index, image) in projects[projectId].carousel" ng-class="index == 0 ? 'item active' : 'item'">
+					<img src='img/projects/carousel/{{ image }}'>
+				</div>
+			</div>
+
+			<a class="carousel-control left"  ng-click="slide('prev')"><span class="icon-prev"></span></a>
+			<a class="carousel-control right" ng-click="slide('next')"> <span class="icon-next"></a>
+		</div>
+	</div></div>
+
+	<div class='row' ng-show="projects[projectId].hasOwnProperty('videoUrl')"><div class='col-xs-12'>
+		<div class="embed-responsive embed-responsive-16by9">
+			<iframe class="embed-responsive-item" ng-src="{{ projects[projectId].videoUrl | trusted }}"></iframe>
+		</div>
+	</div></div>
+
+</div>
+<div class='panel panel-default' id="detailPanel">
+	<div class='col-xs-12'>
+		<div class='col-xs-7' id='project-title'>
+			<h1>{{ projects[projectId].name }}</h1>
+			<h3>{{ projects[projectId].category }}</h3>
+			<ul ng-show="projects[projectId].hasOwnProperty('features')" class='list-group'>
+				<li ng-repeat="feature in projects[projectId].features" class='list-group-item'>{{feature}}</li>
+			</ul>
+		</div>
+		<div class='col-xs-5 pull-right' id='project-programs'>
+			<h3>Software used</h3>
+			<img ng-repeat='program in projects[projectId].programs' src="{{ getProgramImg(program) }}"></img>
+		</div>
+	</div>
+
+	<hr>
+
+	<div class='row'>
+		<div class='col-xs-12' id='project-description'>
+			<p>{{ projects[projectId].description }}</p>
+		</div>
+	</div>
+
+	<div class='row' ng-show="projects[projectId].hasOwnProperty('renders')" id='renders'>
+		<div ng-class="{ 'col-xs-12 col-sm-6' : projects[projectId].hasOwnProperty('webm') }">
+			<img class='img-responsive' ng-repeat='render in projects[projectId].renders' src="{{ render }}"></img>
+		</div>
+		<div class='col-sm-6 col-xs-12 embed-responsive embed-responsive-16by9' ng-show="projects[projectId].hasOwnProperty('webm')">
+			<iframe class="embed-responsive-item" ng-src="{{ projects[projectId].webm | trusted }}"></iframe>
+		</div>
+	</div>
+
+	<div class='row' ng-show="projects[projectId].hasOwnProperty('marmoset')" id='marmoset'>
+		<div class='col-xs-12 embed-responsive embed-responsive-4by3'>
+			<iframe class="embed-responsive-item" src="{{ projects[projectId].marmoset }}" loop="true" name="viewerframe" allowfullscreen="true"></iframe>
+		</div>
+	</div>
+
+</div>

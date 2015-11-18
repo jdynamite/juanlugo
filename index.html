@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en" ng-app="juanApp">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Juan Lugo | Character Rigging, 3D Modeling and Programming">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Juan Diego Lugo</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!-- Webfonts -->
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+
+
+    <!-- Scripts -->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Angular JS -->
+    <script src="js/angular.js" type='text/javascript'></script>
+    <script src="js/angular-route.js" type="text/javascript"></script>
+    <script src="js/angular-animate.js" type="text/javascript"></script>
+
+
+    <!-- app -->
+    <script src="js/app.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip()
+      });
+    </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+
+    <div class='container-fluid'>
+      <div class="navbar navbar-static-top navbar-default button-thing">
+        <button class='btn btn-default' toggle-class="active" id='toggleMenu-btn'><span class='glyphicon glyphicon-th-list'></span></button>
+      </div>
+      <div class="row row-offcanvas">
+        <div class="row">
+          <!-- lefthand column menu -->
+          <div class="col-xs-12 col-sm-4 sidebar-offcanvas">
+            <div class='col-xs-12'>
+              <img src="img/avatar.png" alt="..." class="img-circle img-responsive center-block" style='margin-top: 20px;' data-toggle='tooltip' data-placement='right' title='Hey there'>
+              <p class='text-center' style='margin: 10px 0;'>I'm a 23yr old Character TD, 3D Modeler and Web developer based in all-too-sunny Florida.</p>
+            </div>
+            <div class='col-xs-12'>
+            <ul class="nav nav-pills nav-stacked">
+              <li class="navLink" ng-class="{active : activeMenu == 'gallery'}"><a href="index.html#!/" toggle-active><span class="glyphicon glyphicon-th-large"></span> Gallery</a></li>
+              <li class="navLink" ng-class="{active : activeMenu == 'resume'}"><a href="index.html#!/resume" toggle-active><span class="glyphicon glyphicon-star"></span> Resume</a></li>
+              <li class="navLink" ng-class="{active : activeMenu == 'demo'}"><a href="index.html#!/demo" toggle-active><span class="glyphicon glyphicon-film"></span> Demo Reel</a></li>
+            </ul>
+           </div>
+           <div class='col-xs-12 text-center' style='margin-top: 35px;'>
+            <a href="https://www.linkedin.com/in/juandlugo" id='linkedin'><img src="img/icons/In-2C-54px-TM.png"></a>
+            <a href="https://juanlugo.artstation.com/" id='artstation'><img src="img/icons/artstation.png"></a>
+           </div>
+          </div>
+          <!-- righthand column content -->
+          <div class="col-xs-12 col-sm-8" id='ngViewPar'>
+            <div ng-view></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
