@@ -1,4 +1,4 @@
-var juanApp = angular.module("juanApp", ['ngRoute']);
+var juanApp = angular.module("juanApp", ['ngRoute', 'ngAnimate']);
 
 juanApp.directive('toggleClass', function() {
 	return {
